@@ -14,7 +14,6 @@ namespace MouseMover
     public partial class MouseMover : Form
     {
         Thread shutdownThread;
-        private bool move = false;
         private static Random randomizer = new Random();
         public MouseMover()
         {

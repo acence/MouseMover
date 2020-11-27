@@ -34,6 +34,7 @@
             this.btnStop = new System.Windows.Forms.Button();
             this.timMove = new System.Windows.Forms.Timer(this.components);
             this.timePicker = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnStart
@@ -66,18 +67,28 @@
             // 
             this.timePicker.CustomFormat = "HH:mm";
             this.timePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.timePicker.Location = new System.Drawing.Point(12, 112);
+            this.timePicker.Location = new System.Drawing.Point(12, 130);
             this.timePicker.Name = "timePicker";
             this.timePicker.ShowUpDown = true;
             this.timePicker.Size = new System.Drawing.Size(186, 23);
             this.timePicker.TabIndex = 1;
             this.timePicker.Value = new System.DateTime(2020, 11, 26, 16, 46, 47, 0);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 112);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 15);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Shutdown at";
+            // 
             // MouseMover
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(210, 149);
+            this.ClientSize = new System.Drawing.Size(210, 165);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.timePicker);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
@@ -85,6 +96,7 @@
             this.Name = "MouseMover";
             this.Text = "Mouse Mover";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -94,6 +106,7 @@
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Timer timMove;
         private System.Windows.Forms.DateTimePicker timePicker;
+        private System.Windows.Forms.Label label1;
     }
 }
 
