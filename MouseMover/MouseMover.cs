@@ -29,7 +29,13 @@ namespace MouseMover
                 shutdownThread.Interrupt();
             }
             shutdownThread = new Thread(new ParameterizedThreadStart(ShutdownWait));
-            shutdownThread.Start(timePicker.Value);
+            if (cbShutdown.Checked)
+            {
+                shutdownThread.Start(timePicker.Value);
+            }
+            cbShutdown.Enabled = false;
+            timePicker.Enabled = false;
+            lblStatus.Text = "Running";
         }
 
         private void btnStop_Click(object sender, EventArgs e)
@@ -39,6 +45,9 @@ namespace MouseMover
             {
                 shutdownThread.Interrupt();
             }
+            cbShutdown.Enabled = true;
+            timePicker.Enabled = true;
+            lblStatus.Text = "Stopped";
         }
 
         const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";

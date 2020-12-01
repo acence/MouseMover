@@ -34,7 +34,9 @@
             this.btnStop = new System.Windows.Forms.Button();
             this.timMove = new System.Windows.Forms.Timer(this.components);
             this.timePicker = new System.Windows.Forms.DateTimePicker();
+            this.cbShutdown = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnStart
@@ -67,28 +69,50 @@
             // 
             this.timePicker.CustomFormat = "HH:mm";
             this.timePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.timePicker.Location = new System.Drawing.Point(12, 130);
+            this.timePicker.Location = new System.Drawing.Point(12, 163);
             this.timePicker.Name = "timePicker";
             this.timePicker.ShowUpDown = true;
             this.timePicker.Size = new System.Drawing.Size(186, 23);
             this.timePicker.TabIndex = 1;
             this.timePicker.Value = new System.DateTime(2020, 11, 26, 16, 46, 47, 0);
             // 
+            // cbShutdown
+            // 
+            this.cbShutdown.AutoSize = true;
+            this.cbShutdown.Location = new System.Drawing.Point(12, 138);
+            this.cbShutdown.Name = "cbShutdown";
+            this.cbShutdown.Size = new System.Drawing.Size(80, 19);
+            this.cbShutdown.TabIndex = 2;
+            this.cbShutdown.Text = "Shutdown";
+            this.cbShutdown.UseVisualStyleBackColor = true;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 112);
+            this.label1.Location = new System.Drawing.Point(13, 106);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Shutdown at";
+            this.label1.Size = new System.Drawing.Size(45, 15);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Status: ";
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblStatus.Location = new System.Drawing.Point(64, 106);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(54, 15);
+            this.lblStatus.TabIndex = 4;
+            this.lblStatus.Text = "Stopped";
             // 
             // MouseMover
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(210, 165);
+            this.ClientSize = new System.Drawing.Size(210, 198);
+            this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.cbShutdown);
             this.Controls.Add(this.timePicker);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
@@ -106,7 +130,9 @@
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Timer timMove;
         private System.Windows.Forms.DateTimePicker timePicker;
+        private System.Windows.Forms.CheckBox cbShutdown;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblStatus;
     }
 }
 
