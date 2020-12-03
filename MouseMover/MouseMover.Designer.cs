@@ -44,7 +44,7 @@
             this.btnStart.Location = new System.Drawing.Point(12, 26);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(186, 29);
-            this.btnStart.TabIndex = 0;
+            this.btnStart.TabIndex = 1;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
@@ -54,7 +54,7 @@
             this.btnStop.Location = new System.Drawing.Point(12, 61);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(186, 29);
-            this.btnStop.TabIndex = 0;
+            this.btnStop.TabIndex = 2;
             this.btnStop.Text = "Stop";
             this.btnStop.UseVisualStyleBackColor = true;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
@@ -73,7 +73,7 @@
             this.timePicker.Name = "timePicker";
             this.timePicker.ShowUpDown = true;
             this.timePicker.Size = new System.Drawing.Size(186, 23);
-            this.timePicker.TabIndex = 1;
+            this.timePicker.TabIndex = 4;
             this.timePicker.Value = new System.DateTime(2020, 11, 26, 16, 46, 47, 0);
             // 
             // cbShutdown
@@ -82,7 +82,7 @@
             this.cbShutdown.Location = new System.Drawing.Point(12, 138);
             this.cbShutdown.Name = "cbShutdown";
             this.cbShutdown.Size = new System.Drawing.Size(80, 19);
-            this.cbShutdown.TabIndex = 2;
+            this.cbShutdown.TabIndex = 3;
             this.cbShutdown.Text = "Shutdown";
             this.cbShutdown.UseVisualStyleBackColor = true;
             // 
