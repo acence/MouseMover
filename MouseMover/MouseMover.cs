@@ -65,7 +65,7 @@ namespace MouseMover
             try
             {
                 var shutdownTime = (DateTime)time;
-                var diff = Math.Max(Convert.ToInt32((DateTime.Now - shutdownTime).TotalMilliseconds) + randomizer.Next(0, 5 * 60 * 1000), 0);
+                var diff = Math.Max(Convert.ToInt32((shutdownTime - DateTime.Now).TotalMilliseconds) + randomizer.Next(0, 5 * 60 * 1000), 0);
                 Thread.Sleep(diff);
                 System.Diagnostics.Process.Start("cmd.exe", "/c shutdown /s /t 0");
             }
