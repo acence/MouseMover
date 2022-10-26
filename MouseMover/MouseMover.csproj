@@ -5,8 +5,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>icon.ico</ApplicationIcon>
-    <AssemblyName>svchost</AssemblyName>
-    <RootNamespace>svchost</RootNamespace>
+    <AssemblyName>MouseM</AssemblyName>
+    <RootNamespace>MouseM</RootNamespace>
     <Version>0.1.2</Version>
   </PropertyGroup>
 
