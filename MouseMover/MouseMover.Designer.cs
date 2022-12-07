@@ -37,6 +37,8 @@
             this.cbShutdown = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
+            this.cb_Mouse = new System.Windows.Forms.CheckBox();
+            this.cb_Keyboard = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnStart
@@ -69,7 +71,7 @@
             // 
             this.timePicker.CustomFormat = "HH:mm";
             this.timePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.timePicker.Location = new System.Drawing.Point(12, 163);
+            this.timePicker.Location = new System.Drawing.Point(13, 229);
             this.timePicker.Name = "timePicker";
             this.timePicker.ShowUpDown = true;
             this.timePicker.Size = new System.Drawing.Size(186, 23);
@@ -79,7 +81,7 @@
             // cbShutdown
             // 
             this.cbShutdown.AutoSize = true;
-            this.cbShutdown.Location = new System.Drawing.Point(12, 138);
+            this.cbShutdown.Location = new System.Drawing.Point(13, 204);
             this.cbShutdown.Name = "cbShutdown";
             this.cbShutdown.Size = new System.Drawing.Size(80, 19);
             this.cbShutdown.TabIndex = 3;
@@ -105,11 +107,37 @@
             this.lblStatus.TabIndex = 4;
             this.lblStatus.Text = "Stopped";
             // 
+            // cb_Mouse
+            // 
+            this.cb_Mouse.AutoSize = true;
+            this.cb_Mouse.Checked = true;
+            this.cb_Mouse.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cb_Mouse.Location = new System.Drawing.Point(11, 151);
+            this.cb_Mouse.Name = "cb_Mouse";
+            this.cb_Mouse.Size = new System.Drawing.Size(62, 19);
+            this.cb_Mouse.TabIndex = 5;
+            this.cb_Mouse.Text = "Mouse";
+            this.cb_Mouse.UseVisualStyleBackColor = true;
+            // 
+            // cb_Keyboard
+            // 
+            this.cb_Keyboard.AutoSize = true;
+            this.cb_Keyboard.Checked = true;
+            this.cb_Keyboard.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cb_Keyboard.Location = new System.Drawing.Point(123, 151);
+            this.cb_Keyboard.Name = "cb_Keyboard";
+            this.cb_Keyboard.Size = new System.Drawing.Size(76, 19);
+            this.cb_Keyboard.TabIndex = 6;
+            this.cb_Keyboard.Text = "Keyboard";
+            this.cb_Keyboard.UseVisualStyleBackColor = true;
+            // 
             // MouseMover
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(210, 198);
+            this.ClientSize = new System.Drawing.Size(210, 264);
+            this.Controls.Add(this.cb_Keyboard);
+            this.Controls.Add(this.cb_Mouse);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbShutdown);
@@ -133,6 +161,8 @@
         private System.Windows.Forms.CheckBox cbShutdown;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.CheckBox cb_Mouse;
+        private System.Windows.Forms.CheckBox cb_Keyboard;
     }
 }
 

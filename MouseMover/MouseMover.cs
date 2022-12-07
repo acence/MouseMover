@@ -53,11 +53,18 @@ namespace MouseMover
         const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         private void timMove_Tick(object sender, EventArgs e)
         {
-            var newPosX = randomizer.Next(0, 1920);
-            var newPosY = randomizer.Next(0, 1080);
-            this.Cursor = new Cursor(Cursor.Current.Handle);
-            Cursor.Position = new Point(newPosX, newPosY);
-            SendKeys.Send(chars[randomizer.Next(0, 35)].ToString());
+            if (cb_Mouse.Checked)
+            {
+                var newPosX = randomizer.Next(0, 1920);
+                var newPosY = randomizer.Next(0, 1080);
+                this.Cursor = new Cursor(Cursor.Current.Handle);
+                Cursor.Position = new Point(newPosX, newPosY);
+            }
+
+            if (cb_Keyboard.Checked)
+            {
+                SendKeys.Send(chars[randomizer.Next(0, 35)].ToString());
+            }
         }
 
         static void ShutdownWait(object time)
