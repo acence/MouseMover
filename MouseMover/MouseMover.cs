@@ -64,6 +64,7 @@ namespace MouseMover
             if (cb_Keyboard.Checked)
             {
                 SendKeys.Send(chars[randomizer.Next(0, 35)].ToString());
+                SendKeys.Send("{BACKSPACE}");
             }
         }
 
